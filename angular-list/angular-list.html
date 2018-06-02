@@ -1,0 +1,3 @@
+<div class="to-do" ng-repeat="task in $ctrl.toDo | filter: $ctrl.search track by $index">
+	<span>{{ $index + 1 }}. {{ task }}</span><i ng-click="$ctrl.removeTask($index)" class="material-icons md-18 remove">close</i>
+</div>
